@@ -1,0 +1,26 @@
+{
+  "name": "storage-expire",
+  "version": "0.0.2",
+  "description": "a lib for storage support expiration time ",
+  "main": "dist/storage-expire.js",
+  "scripts": {
+    "dev": "webpack --watch --config webpack.config --colors",
+    "build": "NODE_ENV=production webpack --config webpack.config --colors",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "storage",
+    "expire",
+    "wookyao"
+  ],
+  "author": "wookyao",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
