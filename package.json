@@ -1,6 +1,6 @@
 {
   "name": "storage-expire",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "a lib for storage support expiration time",
   "main": "dist/storage-expire.js",
   "scripts": {

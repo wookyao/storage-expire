@@ -44,7 +44,7 @@ class StorageExpire {
     } catch (error) {}
   }
 
-  getItem(key, doParse = true, defaultValue = null) {
+  getItem(key, doParse, defaultValue) {
     let keyName = `${StorageExpire._prefix}.${key}`;
     const method = this._method;
 
@@ -52,7 +52,14 @@ class StorageExpire {
       let value = method.getItem(keyName);
 
       if (value) {
-        return doParse ? JSON.parse(value) : value;
+        if (doParse) {
+          try {
+            return JSON.parse(value);
+          } catch (error) {
+            return value;
+          }
+        }
+        return value;
       }
 
       return isEmpty(defaultValue) ? "" : defaultValue;
