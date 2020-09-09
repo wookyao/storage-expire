@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="../dist/storage-expire.js"></script>
+  </head>
+  <body>
+    <script>
+      StorageExpire.local.setPrefix("dzl");
+      StorageExpire.local.setItem("userInfo", {
+        age: 18,
+      });
+
+      StorageExpire.session.setPrefix("shigong");
+      StorageExpire.session.setItem("list", [1, 2, 3]);
+      console.log(StorageExpire);
+    </script>
+  </body>
+</html>

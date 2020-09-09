@@ -20,19 +20,19 @@ yarn add storage-expire
 import StorageExpire from 'storage-expire';
 
 // 设置前缀
-StorageExpire.setPrefix("wookyao")
+StorageExpire.local.setPrefix("wookyao")
 
-const Local = StorageExpire.localStorage;
-// const session = StorageExpire.sessionStorage;
+const SElocal = StorageExpire.local;
+// const SEsession = StorageExpire.session;
 
 // 设置
-Local.setItem("token", "weweweew");
-Local.setItem("userInfo", {...}, 毫秒);
+SElocal.setItem("token", "weweweew");
+SElocal.setItem("userInfo", {...}, 毫秒);
 
 // 获取
-Local.getItem("token");
+SElocal.getItem("token");
 
 // 获取userInfo 并且格式化，如果值不存在则取默认值
-Local.getItem("userInfo", true, {...})
+SElocal.getItem("userInfo", true, {...})
 
 ```

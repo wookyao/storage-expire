@@ -1,7 +1,7 @@
 {
   "name": "storage-expire",
-  "version": "0.0.2",
-  "description": "a lib for storage support expiration time ",
+  "version": "0.0.3",
+  "description": "a lib for storage support expiration time",
   "main": "dist/storage-expire.js",
   "scripts": {
     "dev": "webpack --watch --config webpack.config --colors",
@@ -11,7 +11,8 @@
   "keywords": [
     "storage",
     "expire",
-    "wookyao"
+    "localStorage",
+    "sessionStorage"
   ],
   "author": "wookyao",
   "license": "MIT",
